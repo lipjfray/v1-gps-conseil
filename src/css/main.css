@@ -1,51 +1,76 @@
 body {
-    background-image: linear-gradient(45deg, #dcdde1, #487eb0);
     font-family: 'Nunito', sans-serif;
-    background-repeat: no-repeat;
-    margin-bottom: 100%;
-    height:max-content;
 }
 
-li {
-    display:block;
-}
-
-
-.logo, .slogant {
+header {
     position: relative;
-    color: #ecf0f1;
-    left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    text-align: right;
+padding-right: 2%;
+}
+.slogant {
+    text-align: right;
+padding-right: 2%;
 }
 
 
+/* background */
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+/* background */
 
 /* Flexbox */
-    .parent {
+
+  .flex-container {
+    position: absolute;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    text-align: center;
-    }
-    
-    .div1 { 
-        grid-area: 1 / 1 / 2 / 2; 
-        background-color:#192a56;
-        border-radius: 10px;
-    }
-    .div2 { grid-area: 1 / 2 / 2 / 3;
-        background-color:#192a56;
-        border-radius: 10px; 
-    }
-    .div3 { grid-area: 2 / 1 / 3 / 2;
-        background-color:#192a56;
-        border-radius: 10px; 
-    }
-    .div4 { grid-area: 2 / 2 / 3 / 3;
-        background-color:#192a56;
-        border-radius: 10px; 
-    }
+    justify-content: center;  
+    /* flex-flow: wrap; */  
+    flex-wrap: wrap;
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    flex-direction: column;
+
+  }
+
+  .flex-container > div{
+    background: #a29bfe;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;   
+  }
+
+  .flex-container > div a{
+    color:#2c3e50; 
+    text-decoration : none;
+}
+
+
+  .item1 { 
+    /* flex:0 1 auto; */
+    order:0;
+    flex-shrink:1;
+    align-self:auto;
+  }
+			
+
+
 h3, h4, h6 {
         color: white;
     }
@@ -56,15 +81,11 @@ h6 {
 /* Flexbox */
 /* Pied de page */
 footer {  
-    margin-bottom: 2px;
     background-image: linear-gradient(#273c75, #192a56);
-    position: fixed;
-    bottom: 0;
-    padding: 4px;
-    margin-right: 2px;
+    position: absolute;
+    bottom: 0px;
     text-align: center;
-    border-radius: 10px;
     width: 100%;
   }
-}
+
 /* Pied de page */
