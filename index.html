@@ -1,114 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GPS Conseil</title>
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="src/css/main.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <!--Style CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43a8829296.js" crossorigin="anonymous"></script>
+</head>
 
-  </head>
-
-
-  <body>
-    <header>
-        <h1 class="logo">GPS Conseil</h1>
-        <h2 class="slogant">Vous orienter dans la jungle du patrimoine</h2>
-        <!--Navbar--
-        <nav>
-          <li><a href="ingenieurie.html">Ingénieurie patrimoniale</a></li>
-          <li><a href="epargne.html">Gestion d'épargne</a></li>
-          <li><a href="#">Devenir mandataire</a></li>
-          <li><a href="#">Immobilier</a></li>
-          !--Navbar-->
-        </nav>
-    </header>
-    
-      <main>
-        <!--Image fond d'ecran-->
+<body>
+    <div class="sec-bg">        
+    </div>
+    <div class="sec-menu">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo GPS Conseil">
+            </div>
+            <div class="item1"><h3>Gestion de patrimoine</h3></div>
+            <div class="item2"><h3>Immobilier</h3></div>
+            <div class="item3"><h3>Assurance</h3></div>
+            <div class="item3"><h3>Articles</h3></div>
+        </div>
+    </div>
+    <div class="sec-1">
         <div class="container">
-          <img src="src/img/background.jpg" alt="background">
+            <div class="left">
+                <h2>GPS Conseil</h2>
+                <h3>Vous orienter dans la jungle du patrimoine.</h3>
+            </div>
+            <div class="right">
+                <h3>Un cabinet qui vous apporte un regard indépendant sur votre patrimoine.<br>
+                Réalisons ensemble un bilan patrimoniale.<br>
+                Retrouvez nos articles de presse <i class="fa-solid fa-newspaper"></i>
+                </h3>
+            </div>
         </div>
-       
-        <!--Image fond d'ecran-->
-
-        <!--Flexbox-->
-
-        <div class="flex-container">
-   
-          <div class="item1"><a href="ingenieurie.html">
-            <h3>Ingénieurie patrimoniale</h3>
-            <h4>Elaborons un bilan patrimoniale, pour vous éclairer sur les enjeux de vos patrimoine.</h4></a></div>
-
-          <div class="item2"><a href="href="epargne.html">
-            <h3>Gestion d'épargne</h3>
-            <h4>Notre indépendance en qualité de courtier. Fonds structurés, placements.</h4></a></div>
-
-          <div class="item3"><a href="href="">
-            <h3>Immobilier</h3>
-            <h4>Vitrine de l'agence.</h4></a></div>
-
-          <div class="item4"><a href="href="">
-            <h3>Travailler ensemble</h3>
-            <h4>Notre expertise en gestion de patrimoine;<br>Immobilier et en assurances.</h4></a></div>
-        </div>
-        
-        <!-- 
-            <!--Ancien code --
-          <div class="parent">
-            <div class="div1" role="banner"> <a href="ingenieurie.html">
-              <h3 class="sujet1">Ingénieurie patrimoniale<br></h3>
-              <h4>Elaborons un bilan patrimoniale, pour vous éclairer sur les enjeux de vos patrimoine.</h4></a> 
-            </div>
-            <div class="div2" role="banner"><a href="epargne.html">
-              <h3 class="sujet1">Gestion d'épargne<br></h3>
-              <h4>Notre indépendance en qualité de courtier. Fonds structurés, placements.</h4></a>
-          </div>
-            <div class="div3" role="banner">
-              <h3 class="sujet1">Devenir mandataire<br></h3>
-              <h4>En immobilier et en assurances.</h4>
-            </div>
-            <div class="div4" role="banner">
-              <h3 class="sujet1">Immobilier<br></h3>
-              <h4>Notre agence immobilière</h4>
-            </div>
-          </div> 
-        
-        -->
-          <!--Flexbox-->
-          <!--Ancien code --
-              <div role="banner">
-                  <h3 class="sujet1">Démembrements de clauses bénéficiaires, mandat de protection futur...<br><a href="gestion.html">En savoir plus</a></h3>
-              </div>
-              <div class="container1">
-                  <h4><a href="ingenieurie.html">Ingénieurie patrimoniale</a></h4>
-                  <h5>+ de 20ans d'expériences, ensemble réalisons un bilan patrimoniale</h5>
-              </div>
-              <div class="container2">
-                  <h4><a href="epargne.html">Gestion d'épargne</a></h4>
-                  <h5>Fonds structurés, unités de comptes... <a href="epargne.html">découvrir</a></h5>
-              </div>
-              <div class="container3">
-                  <h4><a href="#">Devenir mandataire - agent-commerciale</a></h4>
-                  <h5>Intermédiaire d'assurance, agent-commerciale, <a href="#">developpons notre réseau.</a></h5>
-              </div>
-          !--Ancien code -->
-</main>
-     <!--Ancien code 
-  <footer aria-hidden>
-      <h6>GPS Conseil<address>4 bis Allée Ferdinand de Lesseps 33470 GUJAN MESTRAS</address><br>
-      06 59 34 39 55 - contact@gps-conseil.fr<br>
-      Gestion Patrimoine Schockmel Conseil - SARL<br> 
-      Immatriculation RCS BORDEAUX : 488 125 584 - Orias n°07005411</h6>
-  </footer>
-
-  -->
-
-
-  </body>
+    </div>    
+    
+</body>
 </html>

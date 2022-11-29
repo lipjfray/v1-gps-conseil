@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec-bg  {
+    background-image: url(img/background.jpg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* Menu */
+
+.sec-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 120px;
+    justify-content: center;
+}
+
+.sec-menu .navbar {
+    display: flex;
+    width: 1920px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    letter-spacing: 5px;
+    background-color: rgba(87, 87, 87, 0.5);;
+}
+
+.sec-menu .navbar .logo {
+    display: flex;
+    height: 115%;
+}
+
+/* Menu */
+
+/* Sec-1 */
+
+.sec-1 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    color: white;
+}
+
+.sec-1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-1 .container .left {    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    margin-bottom: 260px;
+    margin-left: 70px;
+ }
+
+.sec-1 .container .left h2 {
+    font-size: 7em;
+    margin-bottom: 0;
+    }
+
+.sec-1 .container .left h3 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+
+.sec-1 .container .right {
+    width: 50%;
+    font-size: 1.8em;
+    margin-right: 50px;
+    margin-top: 280px;
+    background-color: rgba(87, 87, 87, 0.5);
+    padding: 25px;
+}
+
+/* Sec-1 */
+
+/* Nouvelles règles si la fenêtre fait moins de 1600px de large */
+@media screen and (max-width: 1600px)
+{
+    /* Sec-1 */
+    .sec-1 .container .left h3 {
+        font-size: 2em;
+    }
+
+    .sec-1 .container .left h2 {
+        font-size: 5em;
+    }
+    
+    .sec-1 .container .right h3 {
+        font-size: 1em;
+    }
+    /* Sec-1 */
+    .sec-menu .navbar {
+        font-size: 1em;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1200px de large */
+@media screen and (max-width: 1200px)
+{
+    /* Sec-1 */
+    .sec-1 .container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        justify-content: space-between;
+    }
+
+    .sec-1 .container .left {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .sec-1 .container .left h3 {
+        font-size: 2em;
+    }
+
+    .sec-1 .container .right {
+        font-size: 1.8em;
+        padding-left: 20px;
+        margin-right: 0;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 900px de large */
+@media screen and (max-width: 900px)
+{
+    /* Menu */
+    .sec-menu .navbar {
+        font-size: 1em;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .sec-menu .navbar .item1, .item2, .item3 {
+       display: none;
+    }    
+    /* Sec-1 */
+    .sec-1 .container .right {
+        font-size: 1.4em;
+    }
+    .sec-1 .container .left {
+        margin-top: 60px;
+    }
+    .sec-1 .container .left h2 {
+        font-size: 3em;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 500px de large */
+@media screen and (max-width: 900px)
+{
+    /* Sec-1 */
+    .sec-1 .container .right {
+        font-size: 0.8em;
+    }
+    .sec-1 .container .left h2 {
+        font-size: 2em;
+    }
+    .sec-1 .container .left h3 {
+        font-size: 1.2em;
+    }
+}
